@@ -19,12 +19,14 @@
 		DD58FF2317CEE747006C5079 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD58FF2217CEE747006C5079 /* ViewController.m */; };
 		DD58FF2617CEE747006C5079 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD58FF2417CEE747006C5079 /* ViewController.xib */; };
 		DD58FF3717CEEBF0006C5079 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD58FF3617CEEBF0006C5079 /* AVFoundation.framework */; };
-		DD58FF3D17CEF379006C5079 /* btn-play.png in Resources */ = {isa = PBXBuildFile; fileRef = DD58FF3917CEF379006C5079 /* btn-play.png */; };
-		DD58FF3E17CEF379006C5079 /* btn-play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD58FF3A17CEF379006C5079 /* btn-play@2x.png */; };
-		DD58FF4317CEF697006C5079 /* btn-record-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = DD58FF4117CEF697006C5079 /* btn-record-highlight.png */; };
-		DD58FF4417CEF697006C5079 /* btn-record-highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD58FF4217CEF697006C5079 /* btn-record-highlight@2x.png */; };
-		DD58FF4717CEF84D006C5079 /* btn-record.png in Resources */ = {isa = PBXBuildFile; fileRef = DD58FF4517CEF84D006C5079 /* btn-record.png */; };
-		DD58FF4817CEF84D006C5079 /* btn-record@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DD58FF4617CEF84D006C5079 /* btn-record@2x.png */; };
+		DDD9FFC917CF4B8F001E70D9 /* btn-play.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD9FFC317CF4B8F001E70D9 /* btn-play.png */; };
+		DDD9FFCA17CF4B8F001E70D9 /* btn-play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD9FFC417CF4B8F001E70D9 /* btn-play@2x.png */; };
+		DDD9FFCB17CF4B8F001E70D9 /* btn-record-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD9FFC517CF4B8F001E70D9 /* btn-record-highlight.png */; };
+		DDD9FFCC17CF4B8F001E70D9 /* btn-record-highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD9FFC617CF4B8F001E70D9 /* btn-record-highlight@2x.png */; };
+		DDD9FFCD17CF4B8F001E70D9 /* btn-record.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD9FFC717CF4B8F001E70D9 /* btn-record.png */; };
+		DDD9FFCE17CF4B8F001E70D9 /* btn-record@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD9FFC817CF4B8F001E70D9 /* btn-record@2x.png */; };
+		DDD9FFD617CF5262001E70D9 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD9FFD417CF5262001E70D9 /* bg.png */; };
+		DDD9FFD717CF5262001E70D9 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD9FFD517CF5262001E70D9 /* bg@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,12 +50,14 @@
 		DD58FF3417CEEB95006C5079 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		DD58FF3617CEEBF0006C5079 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		DD58FF3817CEEEDD006C5079 /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
-		DD58FF3917CEF379006C5079 /* btn-play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-play.png"; sourceTree = "<group>"; };
-		DD58FF3A17CEF379006C5079 /* btn-play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-play@2x.png"; sourceTree = "<group>"; };
-		DD58FF4117CEF697006C5079 /* btn-record-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-record-highlight.png"; sourceTree = "<group>"; };
-		DD58FF4217CEF697006C5079 /* btn-record-highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-record-highlight@2x.png"; sourceTree = "<group>"; };
-		DD58FF4517CEF84D006C5079 /* btn-record.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-record.png"; sourceTree = "<group>"; };
-		DD58FF4617CEF84D006C5079 /* btn-record@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-record@2x.png"; sourceTree = "<group>"; };
+		DDD9FFC317CF4B8F001E70D9 /* btn-play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-play.png"; sourceTree = "<group>"; };
+		DDD9FFC417CF4B8F001E70D9 /* btn-play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-play@2x.png"; sourceTree = "<group>"; };
+		DDD9FFC517CF4B8F001E70D9 /* btn-record-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-record-highlight.png"; sourceTree = "<group>"; };
+		DDD9FFC617CF4B8F001E70D9 /* btn-record-highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-record-highlight@2x.png"; sourceTree = "<group>"; };
+		DDD9FFC717CF4B8F001E70D9 /* btn-record.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-record.png"; sourceTree = "<group>"; };
+		DDD9FFC817CF4B8F001E70D9 /* btn-record@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-record@2x.png"; sourceTree = "<group>"; };
+		DDD9FFD417CF5262001E70D9 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		DDD9FFD517CF5262001E70D9 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 		DD58FF2C17CEE933006C5079 /* Resorces */ = {
 			isa = PBXGroup;
 			children = (
+				DDD9FFCF17CF5064001E70D9 /* Common */,
 				DD58FF2D17CEE93B006C5079 /* ViewController */,
 			);
 			name = Resorces;
@@ -141,14 +146,23 @@
 		DD58FF2D17CEE93B006C5079 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DD58FF3917CEF379006C5079 /* btn-play.png */,
-				DD58FF3A17CEF379006C5079 /* btn-play@2x.png */,
-				DD58FF4517CEF84D006C5079 /* btn-record.png */,
-				DD58FF4617CEF84D006C5079 /* btn-record@2x.png */,
-				DD58FF4117CEF697006C5079 /* btn-record-highlight.png */,
-				DD58FF4217CEF697006C5079 /* btn-record-highlight@2x.png */,
+				DDD9FFC317CF4B8F001E70D9 /* btn-play.png */,
+				DDD9FFC417CF4B8F001E70D9 /* btn-play@2x.png */,
+				DDD9FFC517CF4B8F001E70D9 /* btn-record-highlight.png */,
+				DDD9FFC617CF4B8F001E70D9 /* btn-record-highlight@2x.png */,
+				DDD9FFC717CF4B8F001E70D9 /* btn-record.png */,
+				DDD9FFC817CF4B8F001E70D9 /* btn-record@2x.png */,
 			);
 			name = ViewController;
+			sourceTree = "<group>";
+		};
+		DDD9FFCF17CF5064001E70D9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DDD9FFD417CF5262001E70D9 /* bg.png */,
+				DDD9FFD517CF5262001E70D9 /* bg@2x.png */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,7 +192,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = "bugcloud";
+				ORGANIZATIONNAME = bugcloud;
 			};
 			buildConfigurationList = DD58FF0117CEE747006C5079 /* Build configuration list for PBXProject "VoiceRecorder" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -207,12 +221,14 @@
 				DD58FF1E17CEE747006C5079 /* Default@2x.png in Resources */,
 				DD58FF2017CEE747006C5079 /* Default-568h@2x.png in Resources */,
 				DD58FF2617CEE747006C5079 /* ViewController.xib in Resources */,
-				DD58FF3D17CEF379006C5079 /* btn-play.png in Resources */,
-				DD58FF3E17CEF379006C5079 /* btn-play@2x.png in Resources */,
-				DD58FF4317CEF697006C5079 /* btn-record-highlight.png in Resources */,
-				DD58FF4417CEF697006C5079 /* btn-record-highlight@2x.png in Resources */,
-				DD58FF4717CEF84D006C5079 /* btn-record.png in Resources */,
-				DD58FF4817CEF84D006C5079 /* btn-record@2x.png in Resources */,
+				DDD9FFC917CF4B8F001E70D9 /* btn-play.png in Resources */,
+				DDD9FFCA17CF4B8F001E70D9 /* btn-play@2x.png in Resources */,
+				DDD9FFCB17CF4B8F001E70D9 /* btn-record-highlight.png in Resources */,
+				DDD9FFCC17CF4B8F001E70D9 /* btn-record-highlight@2x.png in Resources */,
+				DDD9FFCD17CF4B8F001E70D9 /* btn-record.png in Resources */,
+				DDD9FFCE17CF4B8F001E70D9 /* btn-record@2x.png in Resources */,
+				DDD9FFD617CF5262001E70D9 /* bg.png in Resources */,
+				DDD9FFD717CF5262001E70D9 /* bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +364,7 @@
 				DD58FF2B17CEE747006C5079 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
