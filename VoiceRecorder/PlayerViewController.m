@@ -32,6 +32,7 @@
                                                                )];
     _tableView.delegate = self;
     _tableView.dataSource = self;
+    LOG(@"%f", _tableView.rowHeight);
     [self.view addSubview:_tableView];
     
     // show navigation Bar
@@ -74,9 +75,10 @@
     UITableViewCell *cell = [_tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier];
-        [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
-        cell.backgroundView.backgroundColor = [UIColor clearColor];
+        [cell setSelectionStyle:UITableViewCellSelectionStyleGray];
+        cell.tag = 0;
     }
+    [cell.imageView setImage:[UIImage imageNamed:@"icon-play.png"]];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     //[formatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"JST"]];
     [formatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
@@ -94,28 +96,39 @@
 #pragma mark UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    [_tableView reloadData];
     [_tableView deselectRowAtIndexPath:[_tableView indexPathForSelectedRow] animated:YES];
-    NSError *error = nil;
-    
-    // File Path
-    NSString *filePath = [_soundList.list[indexPath.row] filePath];
-    NSURL *url = [NSURL fileURLWithPath:filePath];
-    
-    if ([[NSFileManager defaultManager] fileExistsAtPath:[url path]]) {
-        AVAudioSession *session = [AVAudioSession sharedInstance];
-        [session setCategory:AVAudioSessionCategoryPlayback error:&error];
-        if (error != nil) {
-            LOG(@"Error %@", [error localizedDescription]);
-            return;
-        }
+    UITableViewCell *cell = [_tableView cellForRowAtIndexPath:indexPath];
+    // playing
+    if (cell.tag == 1) {
+        [cell.imageView setImage:[UIImage imageNamed:@"icon-play.png"]];
+        cell.tag = 0;
+        [_player stop];
+    } else {
+        [cell.imageView setImage:[UIImage imageNamed:@"icon-stop.png"]];
+        cell.tag = 1;
+        NSError *error = nil;
         
-        _player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
-        if (error != nil) {
-            LOG(@"Error %@", [error localizedDescription]);
-            return;
+        // File Path
+        NSString *filePath = [_soundList.list[indexPath.row] filePath];
+        NSURL *url = [NSURL fileURLWithPath:filePath];
+        
+        if ([[NSFileManager defaultManager] fileExistsAtPath:[url path]]) {
+            AVAudioSession *session = [AVAudioSession sharedInstance];
+            [session setCategory:AVAudioSessionCategoryPlayback error:&error];
+            if (error != nil) {
+                LOG(@"Error %@", [error localizedDescription]);
+                return;
+            }
+            
+            _player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+            if (error != nil) {
+                LOG(@"Error %@", [error localizedDescription]);
+                return;
+            }
+            [_player prepareToPlay];
+            [_player play];
         }
-        [_player prepareToPlay];
-        [_player play];
     }
 }
 
