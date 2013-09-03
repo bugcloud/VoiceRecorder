@@ -15,6 +15,23 @@
     return self;
 }
 
+// implements the NSCoding protocol
+- (id)initWithCoder:(NSCoder *)coder
+{
+    self = [super init];
+    if (self) {
+        self.createdAt = [coder decodeObjectForKey:@"createdAt"];
+        self.filePath = [coder decodeObjectForKey:@"filePath"];
+    }
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)coder
+{
+    [coder encodeObject:self.createdAt forKey:@"createdAt"];
+    [coder encodeObject:self.filePath forKey:@"filePath"];
+}
+
 + (NSString *)filePathFromCurrentTime
 {
     NSString *dir = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];

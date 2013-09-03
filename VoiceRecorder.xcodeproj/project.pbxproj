@@ -16,6 +16,8 @@
 		DD4ACEE317D033A3009D48A8 /* TestSound.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4ACEE217D033A3009D48A8 /* TestSound.m */; };
 		DD4ACEE617D03424009D48A8 /* Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4ACEE517D03424009D48A8 /* Sound.m */; };
 		DD4ACEE717D03424009D48A8 /* Sound.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4ACEE517D03424009D48A8 /* Sound.m */; };
+		DD4ACEEA17D07CDD009D48A8 /* SoundList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4ACEE917D07CDD009D48A8 /* SoundList.m */; };
+		DD4ACEEB17D07CDD009D48A8 /* SoundList.m in Sources */ = {isa = PBXBuildFile; fileRef = DD4ACEE917D07CDD009D48A8 /* SoundList.m */; };
 		DD58FF0A17CEE747006C5079 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD58FF0917CEE747006C5079 /* UIKit.framework */; };
 		DD58FF0C17CEE747006C5079 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD58FF0B17CEE747006C5079 /* Foundation.framework */; };
 		DD58FF0E17CEE747006C5079 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD58FF0D17CEE747006C5079 /* CoreGraphics.framework */; };
@@ -36,6 +38,7 @@
 		DDD9FFCE17CF4B8F001E70D9 /* btn-record@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD9FFC817CF4B8F001E70D9 /* btn-record@2x.png */; };
 		DDD9FFD617CF5262001E70D9 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD9FFD417CF5262001E70D9 /* bg.png */; };
 		DDD9FFD717CF5262001E70D9 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD9FFD517CF5262001E70D9 /* bg@2x.png */; };
+		DDDF9D2417D56DBF00696D5F /* TestSoundList.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDF9D2317D56DBF00696D5F /* TestSoundList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,8 @@
 		DD4ACEE217D033A3009D48A8 /* TestSound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSound.m; sourceTree = "<group>"; };
 		DD4ACEE417D03424009D48A8 /* Sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sound.h; sourceTree = "<group>"; };
 		DD4ACEE517D03424009D48A8 /* Sound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sound.m; sourceTree = "<group>"; };
+		DD4ACEE817D07CDD009D48A8 /* SoundList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundList.h; sourceTree = "<group>"; };
+		DD4ACEE917D07CDD009D48A8 /* SoundList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundList.m; sourceTree = "<group>"; };
 		DD58FF0617CEE747006C5079 /* VoiceRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD58FF0917CEE747006C5079 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DD58FF0B17CEE747006C5079 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -76,6 +81,8 @@
 		DDD9FFC817CF4B8F001E70D9 /* btn-record@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-record@2x.png"; sourceTree = "<group>"; };
 		DDD9FFD417CF5262001E70D9 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		DDD9FFD517CF5262001E70D9 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
+		DDDF9D2217D56DBF00696D5F /* TestSoundList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSoundList.h; sourceTree = "<group>"; };
+		DDDF9D2317D56DBF00696D5F /* TestSoundList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSoundList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +118,8 @@
 				DD4ACECB17D03186009D48A8 /* Supporting Files */,
 				DD4ACEE117D033A3009D48A8 /* TestSound.h */,
 				DD4ACEE217D033A3009D48A8 /* TestSound.m */,
+				DDDF9D2217D56DBF00696D5F /* TestSoundList.h */,
+				DDDF9D2317D56DBF00696D5F /* TestSoundList.m */,
 			);
 			path = GHUnit;
 			sourceTree = "<group>";
@@ -165,6 +174,8 @@
 				DD58FF3817CEEEDD006C5079 /* Macro.h */,
 				DD4ACEE417D03424009D48A8 /* Sound.h */,
 				DD4ACEE517D03424009D48A8 /* Sound.m */,
+				DD4ACEE817D07CDD009D48A8 /* SoundList.h */,
+				DD4ACEE917D07CDD009D48A8 /* SoundList.m */,
 				DD58FF1817CEE747006C5079 /* AppDelegate.h */,
 				DD58FF1917CEE747006C5079 /* AppDelegate.m */,
 				DD58FF2117CEE747006C5079 /* ViewController.h */,
@@ -357,6 +368,8 @@
 				DD4ACED117D03186009D48A8 /* main.m in Sources */,
 				DD4ACEE317D033A3009D48A8 /* TestSound.m in Sources */,
 				DD4ACEE717D03424009D48A8 /* Sound.m in Sources */,
+				DD4ACEEB17D07CDD009D48A8 /* SoundList.m in Sources */,
+				DDDF9D2417D56DBF00696D5F /* TestSoundList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +381,7 @@
 				DD58FF1A17CEE747006C5079 /* AppDelegate.m in Sources */,
 				DD58FF2317CEE747006C5079 /* ViewController.m in Sources */,
 				DD4ACEE617D03424009D48A8 /* Sound.m in Sources */,
+				DD4ACEEA17D07CDD009D48A8 /* SoundList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
