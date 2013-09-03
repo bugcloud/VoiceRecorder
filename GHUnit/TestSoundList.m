@@ -34,8 +34,15 @@
 {
     [self createTestData];
     SoundList *soundList = [[SoundList alloc] init];
-    [soundList remove:0];
-    GHAssertEquals((int)[soundList.list count], 1, @"Checking remove Sound object");
+    Sound *sound = [[Sound alloc] initWithAttributes:@{ @"createdAt": [NSDate date] }];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSError *error = nil;
+    [@"test" writeToFile:sound.filePath atomically:NO encoding:NSUTF8StringEncoding error:&error];
+    [soundList append:sound];
+    
+    [soundList remove:[soundList.list count] - 1];
+    GHAssertEquals((int)[soundList.list count], 2, @"Checking remove Sound object");
+    GHAssertFalse([fileManager fileExistsAtPath:sound.filePath], @"Checking removing sound file");
     [self clearTestData];
 }
 

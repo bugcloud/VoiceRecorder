@@ -33,6 +33,10 @@
 
 - (void)remove:(NSInteger)index
 {
+    Sound *removing = _list[index];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSError *error = nil;
+    [fileManager removeItemAtPath:removing.filePath error:&error];
     [_list removeObjectAtIndex:index];
     [self synchronizeList];
 }
