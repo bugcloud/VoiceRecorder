@@ -39,6 +39,7 @@
 		DDD9FFD617CF5262001E70D9 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD9FFD417CF5262001E70D9 /* bg.png */; };
 		DDD9FFD717CF5262001E70D9 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDD9FFD517CF5262001E70D9 /* bg@2x.png */; };
 		DDDF9D2417D56DBF00696D5F /* TestSoundList.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDF9D2317D56DBF00696D5F /* TestSoundList.m */; };
+		DDDF9D2717D5784E00696D5F /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDF9D2617D5784E00696D5F /* PlayerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +84,8 @@
 		DDD9FFD517CF5262001E70D9 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
 		DDDF9D2217D56DBF00696D5F /* TestSoundList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSoundList.h; sourceTree = "<group>"; };
 		DDDF9D2317D56DBF00696D5F /* TestSoundList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSoundList.m; sourceTree = "<group>"; };
+		DDDF9D2517D5784E00696D5F /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		DDDF9D2617D5784E00696D5F /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +184,8 @@
 				DD58FF2117CEE747006C5079 /* ViewController.h */,
 				DD58FF2217CEE747006C5079 /* ViewController.m */,
 				DD58FF2417CEE747006C5079 /* ViewController.xib */,
+				DDDF9D2517D5784E00696D5F /* PlayerViewController.h */,
+				DDDF9D2617D5784E00696D5F /* PlayerViewController.m */,
 				DD58FF1017CEE747006C5079 /* Supporting Files */,
 			);
 			path = VoiceRecorder;
@@ -382,6 +387,7 @@
 				DD58FF2317CEE747006C5079 /* ViewController.m in Sources */,
 				DD4ACEE617D03424009D48A8 /* Sound.m in Sources */,
 				DD4ACEEA17D07CDD009D48A8 /* SoundList.m in Sources */,
+				DDDF9D2717D5784E00696D5F /* PlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

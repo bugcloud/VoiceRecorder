@@ -5,12 +5,13 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "PlayerViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <PlayerViewControllerDelegate>
 
 @property (nonatomic, strong) AVAudioRecorder *recorder;
 @property (nonatomic, strong) AVAudioSession *session;
-@property (nonatomic, strong) AVAudioPlayer *player;
+@property (nonatomic, retain) PlayerViewController *playerView;
 @property (nonatomic, weak) IBOutlet UIButton *recordBtn;
 @property (nonatomic, weak) IBOutlet UIButton *playBtn;
 

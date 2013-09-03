@@ -23,6 +23,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    _playerView = [[PlayerViewController alloc] init];
+    _playerView.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,7 +36,7 @@
 {
     NSError *error = nil;
     if (_session.inputAvailable) {
-        [_session setCategory:AVAudioSessionCategoryPlayAndRecord error:&error];
+        [_session setCategory:AVAudioSessionCategoryRecord error:&error];
     }
     if (error != nil) {
         LOG(@"Error when preparing audio session :%@", [error localizedDescription]);
@@ -48,14 +50,14 @@
     }
     
     // make file path & start recording
-    NSString *dir = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
-    NSString *filePath = [dir stringByAppendingPathComponent:@"test.caf"];
-    NSURL *url = [NSURL fileURLWithPath:filePath];
+    Sound *sound = [[Sound alloc] initWithAttributes:@{ @"createdAt": [NSDate date] }];
+    NSURL *url = [NSURL fileURLWithPath:sound.filePath];
     _recorder = [[AVAudioRecorder alloc] initWithURL:url settings:nil error:&error];
     if (error != nil) {
         LOG(@"Error when preparing audio session :%@", [error localizedDescription]);
         return;
     }
+    [_playerView.soundList append:sound];
     [_recorder record];
 }
 
@@ -69,22 +71,16 @@
 
 - (IBAction)playButtonTouchEnd:(UIButton *)btn
 {
-    NSError *error = nil;
-    
-    // File Path
-    NSString *dir = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
-    NSString *filePath = [dir stringByAppendingPathComponent:@"test.caf"];
-    NSURL *url = [NSURL fileURLWithPath:filePath];
-    
-    if ([[NSFileManager defaultManager] fileExistsAtPath:[url path]]) {
-        _player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
-        
-        if (error != nil) {
-            LOG(@"Error %@", [error localizedDescription]);
-        }
-        [_player prepareToPlay];
-        [_player play];
-    }
+    [self presentViewController:_playerView animated:YES completion:^(void) {
+        [_playerView.tableView reloadData];
+    }];
+}
+
+#pragma mark -
+#pragma mark PlayerViewDelegate
+- (void)willPlayerViewDisappear:(PlayerViewController *)controller
+{
+    [self dismissViewControllerAnimated:YES completion:^(void) {}];
 }
 
 @end
